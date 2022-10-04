@@ -5,10 +5,11 @@ import BookListItem from "../book-list-item";
 import WithBookstoreService from "../hoc";
 import { fetchBooks, onAddedToCart } from "../../actions";
 import compose from "../../utils";
-import "./book-list";
 import Spinner from "../spinner";
-import ErrorIndicator from "../error-indicator";
+import ErrorIndicator from "../error-indicator/index"
 import { bindActionCreators } from "redux";
+
+import "./book-list.css";
 
 const BookList = ({books, onAddedToCart}) => {
     return (
